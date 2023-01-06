@@ -1,0 +1,120 @@
+ body {
+   margin: 15px;
+   background-color: #1b1b1b;
+   color: white;
+   font-family: Muli, sans-serif;
+   font-size: 16px;
+ }
+
+ h1 {
+   font-family: "Space Mono", monospace;
+   font-size: 46px;
+ }
+
+ pre {
+   width: auto;
+   height: auto;
+ }
+
+ /* Unvisited link */
+ a:link {
+   color: lightgreen;
+   text-decoration: none;
+ }
+
+ a:visited {
+   color: green;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: green;
+   text-decoration: underline;
+ }
+
+ a:active {
+   color: darkgreen;
+   text-decoration: underline;
+ }
+
+ .home {
+   border: 1px solid black;
+   background-color: #050504;
+   overflow: auto;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .half {
+   flex-basis: 50%;
+ }
+
+ .picture-first {
+   max-width: 600px;
+   height: auto;
+   padding: 10px;
+ }
+
+ img {
+   display: block;
+   margin: auto;
+ }
+
+ @media (max-width: 768px) {
+   .half {
+     flex-basis: 100%;
+   }
+ }
+
+ .form {
+   background-color: #050504;
+   background-size: 100px;
+   border-radius: 25px;
+   padding: 10px;
+   margin: 10px;
+ }
+
+ #fullname,
+ #phoneNumber,
+ #email,
+ #subject,
+ #message {
+   width: 90%;
+ }
+
+ /* picture {#050504} #343434 */
+
+ .topnav {
+   overflow: hidden;
+   background-color: #343434;
+   position: relative;
+ }
+
+ .topnav #myLinks {
+   display: none;
+ }
+
+ .topnav a {
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   display: block;
+ }
+
+ .topnav a.icon {
+   background: black;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+
+ .active {
+   background-color: #212020;
+ }

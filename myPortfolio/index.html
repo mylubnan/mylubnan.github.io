@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AboutMeLubnan">
+    <meta name="keywords" content="Lubnan, Lubnan Samae, Portfolio">
+    <meta name="author" content="Lubnan">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffebbb7467.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="topnav">
+        <a href="#mail" class="active"><i class="fa-solid fa-house"></i> LnSm</a>
+        <div id="myLinks">
+            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+            <a href="#portfolio"><i class="fa-solid fa-address-card"></i> Portfolio</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <a href="#login"><i class="fa-solid fa-circle-user"></i> Login</a>
+        </div>
+        <!-- Add three bars icon  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+
+    <hr>
+
+    <section class="home">
+        <pre class="half">
+        <h1>
+   Hello 
+   I'm Lubnan Samae 
+   and I'm a IT Student
+        </h1>
+        </pre>
+        <img src="img/Lubnan.jpg" alt="Lubnan image" class="picture-first">
+    </section>
+    <hr>
+
+    <section id="about">
+        <h1>About me</h1>
+
+        I&#39;m Lubnan Samae <br>
+        I&#39;m study Information Technology, 2nd year of Bachelor's degree at Fatoni University. I'm Interesting in web
+        development. <br> <br>
+        My experience is C, HTML, CSS, JS language and basic cyber ane network security. <br> <br>
+        This is my first personal website by using HTML, CSS, and JS.
+    </section>
+    <hr>
+
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+    </section>
+    <hr>
+    <section id="contact">
+        <h1>Contact me</h1>
+        Get in Touch <br>
+        <i class="fa-solid fa-circle-user"></i> Name <br>
+        Lubnan Samae <br>
+        <i class="fa-solid fa-location-dot"></i> Address<br>
+        Yala, Thailand, 95000 <br>
+        <i class="fa-solid fa-inbox"></i> Email <br>
+        mylubnan@gmail.com <br>
+        <i class="fa-solid fa-book-atlas"></i> Website <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan" target="_blank">
+            Github.com/mylubnan</a> <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan"
+            target="_blank">
+            Freecodecamp.org/mylubnan</a> <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung"
+            target="_blank">
+            Facebook.com/lnankung</a> <br>
+        <i class="fa-solid fa-comment"></i> Message Me <br>
+        <form class="form" action="pathForTheActionScript" target="_blank" method="post" autocomplete="on">
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="fullname" title="Only character follow by name and surname">Full Name:</label> <br>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name" autocomplete="on" required
+                    pattern="[A-Za-z]{1,}.[A-Za-z]{1,}">
+                <br>
+                <label for="phoneNumber" title="Only numeric except + at front">Phone Number:</label> <br>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" autocomplete="on"
+                    required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"> <br>
+                <label for="email" title="Include @ and .">Email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+                <label for="subject">Subject:</label> <br>
+                <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="on" required> <br>
+                <label for="message" class="message">Message:</label> <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autocomplete="off"
+                    required></textarea>
+                <br>
+                <label for="myfile">Select a file:</label> <br>
+                <input type="file" name="myfile" id="myfile" accept=".jpg,.png" required> <br>
+                <input type="submit" value="Click Me!!! to Submit"><br>
+                <button type="button" onclick="alert('Hi There')">I'm also Button</button>
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+
+    <section id="login">
+        <h1 id="">Login</h1>
+    </section>
+    <hr>
+
+    <footer> Create By <a href="https://github.com/mylubnan" target="_blank">Lubnan Samae</a> | &#169; 2022 All right
+        reserved.</footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
