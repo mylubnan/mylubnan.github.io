@@ -11,10 +11,12 @@
    font-size: 46px;
  }
 
- pre {
-   width: auto;
-   height: auto;
+ .author_text {
+   font-family: "Space Mono", monospace;
+   font-size: 46px;
+   padding-left: 5%;
  }
+
 
  /* Unvisited link */
  a:link {
@@ -46,11 +48,17 @@
  }
 
  .half {
-   flex-basis: 50%;
+   flex-basis: 100%;
  }
 
- .picture-first {
-   max-width: 600px;
+ @media screen and (min-width: 1200px) {
+   .half {
+     flex-basis: 50%;
+   }
+ }
+
+ .author_picture {
+   max-width: 400px;
    height: auto;
    padding: 10px;
  }
@@ -60,11 +68,6 @@
    margin: auto;
  }
 
- @media (max-width: 768px) {
-   .half {
-     flex-basis: 100%;
-   }
- }
 
  .form {
    background-color: #050504;
@@ -82,19 +85,17 @@
    width: 90%;
  }
 
- /* picture {#050504} #343434 */
-
- .topnav {
+ .menu_container {
    overflow: hidden;
    background-color: #343434;
    position: relative;
  }
 
- .topnav #myLinks {
+ .menu_container #myLinks {
    display: none;
  }
 
- .topnav a {
+ .menu_container a {
    color: white;
    padding: 14px 16px;
    text-decoration: none;
@@ -102,7 +103,7 @@
    display: block;
  }
 
- .topnav a.icon {
+ .menu_container a.icon {
    background: black;
    display: block;
    position: absolute;
@@ -110,11 +111,16 @@
    top: 0;
  }
 
- .topnav a:hover {
+ .menu_container a:hover {
    background-color: #ddd;
    color: black;
  }
 
  .active {
    background-color: #212020;
+ }
+
+ footer {
+   text-align: center;
+   margin: 25px;
  }
