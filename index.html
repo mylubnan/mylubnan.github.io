@@ -16,12 +16,12 @@
 
 <body>
     <nav class="menu_container">
-        <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="./" class="active"><i class="fa-solid fa-house"></i> Home</a>
         <secion id="myLinks">
             <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
             <a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
-            <a href="#login"><i class="fa-solid fa-circle-user"></i> Login</a>
+            <a href="myPortfolio/index.php"><i class="fa-solid fa-circle-user"></i> Login</a>
         </secion>
         <!-- Add three bars icon  -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,18 +54,19 @@
 
     <section id="portfolio">
         <h1>Portfolio</h1>
+        <img src="myPortfolio/img/p1.png" alt="portfolio_image" style="width: 70%;">
+
     </section>
     <hr>
     <section id="contact">
         <h1>Contact me</h1>
-        Get in Touch <br>
-        <i class="fa-solid fa-circle-user"></i> Name <br>
+        <i class="fa-solid fa-circle-user"></i> <strong>Name</strong> <br>
         Lubnan Samae <br>
-        <i class="fa-solid fa-location-dot"></i> Address<br>
+        <i class="fa-solid fa-location-dot"></i> <strong>Address</strong> <br>
         Yala, Thailand, 95000 <br>
-        <i class="fa-solid fa-inbox"></i> Email <br>
+        <i class="fa-solid fa-inbox"></i> <strong>Email</strong> <br>
         mylubnan@gmail.com <br>
-        <i class="fa-solid fa-book-atlas"></i> Website <br>
+        <i class="fa-solid fa-book-atlas"></i> <strong>Website</strong> <br>
         &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan" target="_blank">
             Github.com/mylubnan</a> <br>
         &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan"
@@ -74,46 +75,46 @@
         &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung"
             target="_blank">
             Facebook.com/lnankung</a> <br>
-        <i class="fa-solid fa-comment"></i> Message Me <br>
-        <form class="form" action="pathForTheActionScript" target="_blank" method="post" autocomplete="on">
+        <i class="fa-solid fa-comment"></i> <strong>Message Me</strong> <br>
+        <form class="form" action="pathForTheActionScript" target="_blank" method="post">
             <fieldset>
                 <legend>User Information</legend>
                 <label for="fullname" title="Only character follow by name and surname">Full Name:</label> <br>
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name" autocomplete="on" required
-                    pattern="[A-Za-z]{1,}.[A-Za-z]{1,}">
+                <input type="text" title="Only character follow by name and surname" name="fullname" id="fullname"
+                    placeholder="Full Name" required pattern="[A-Za-z]{1,}.[A-Za-z]{1,}">
                 <br>
-                <label for="phoneNumber" title="Only numeric except + at front">Phone Number:</label> <br>
-                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" autocomplete="on"
-                    required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"> <br>
-                <label for="email" title="Include @ and .">Email:</label> <br>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+                <label for="phoneNumber" title="Only numeric except + at the front">Phone Number:</label> <br>
+                <input type="text" title="Only numeric except + at the front" name="phoneNumber" id="phoneNumber"
+                    placeholder="Phone Number" required
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                <br>
+                <label for="email" title="Please fill in the proper email">Email:</label> <br>
+                <input type="email" title="Please fill in the proper email" name="email" id="fremail"
+                    placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br>
                 <label for="subject">Subject:</label> <br>
-                <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="on" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 <br>
                 <label for="message" class="message">Message:</label> <br>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autocomplete="off"
                     required></textarea>
                 <br>
-                <label for="myfile">Select a file:</label> <br>
-                <input type="file" name="myfile" id="myfile" accept=".jpg,.png" required> <br>
-                <input type="submit" value="Click Me!!! to Submit"><br>
-                <button type="button" onclick="alert('Hi There')">I'm also Button</button>
+                <label for="myfile">Select a file:</label>
+                <br>
+                <input type="file" name="myfile" id="myfile" accept=".jpg,.png" required>
+                <br>
+                <input type="submit" value="Click! to Submit"><br>
             </fieldset>
         </form>
     </section>
     <hr>
 
-    <section id="login">
-        <h1 id="">Login</h1>
-    </section>
-    <hr>
     </section>
 
     <footer>
         Create By <a href="https://github.com/mylubnan" target="_blank">Lubnan Samae</a> | &#169; 2022 All
-            right
-            reserved.
+        right
+        reserved.
     </footer>
 
     <script src="myPortfolio/script.js"></script>

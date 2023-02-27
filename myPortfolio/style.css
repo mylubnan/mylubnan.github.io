@@ -79,7 +79,7 @@
 
  #fullname,
  #phoneNumber,
- #email,
+ #fremail,
  #subject,
  #message {
    width: 90%;
@@ -123,4 +123,112 @@
  footer {
    text-align: center;
    margin: 25px;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ /* Add padding to containers */
+ .container {
+   padding: 16px;
+   background-color: white;
+   color: black;
+ }
+
+ /* Full-width input fields */
+ input[type=text],
+ input[type=email],
+ input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+ }
+
+ #message {
+   width: 90%;
+   padding: 15px;
+ }
+
+ input[type=text]:focus,
+ input[type=email]:focus,
+ input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+
+ #message:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+
+ /* Overwrite default styles of hr */
+ hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+ }
+
+ /* Set a style for the submit button */
+ .btn {
+   background-color: #04AA6D;
+   color: white;
+   padding: 16px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+ }
+
+ .btn:hover {
+   opacity: 1;
+ }
+
+ /* Add a blue text color to links */
+ a {
+   color: dodgerblue;
+ }
+
+ /* Set a grey background color and center the text of the "sign in" section */
+ .signin {
+   background-color: #f1f1f1;
+   text-align: center;
+ }
+
+ .imgcontainer {
+   text-align: center;
+   margin: 24px 0 12px 0;
+   width: 30%;
+   margin: auto;
+ }
+
+ img.avatar {
+   width: 50%;
+   border-radius: 50%;
+ }
+
+ .content {
+   text-align: center;
+   /* margin: auto; */
+ }
+
+ .error {
+   width: 92%;
+   margin: 0px auto;
+   padding: 10px;
+   border: 1px solid #a94442;
+   color: #a94442;
+   background: #f2dede;
+   border-radius: 5px;
+   text-align: center;
+ }
+
+ .success {
+  color: #3c763d;
+  background: #dff9d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
  }
