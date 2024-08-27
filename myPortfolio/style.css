@@ -1,3 +1,7 @@
+#navbar {
+  position: fixed;
+}
+
  body {
    margin: 15px;
    background-color: #1b1b1b;
@@ -232,3 +236,76 @@
   border: 1px solid #3c763d;
   margin-bottom: 20px;
  }
+
+ /* Hide the default file input */
+input[type="file"] {
+  display: none; /* Hide default file input */
+}
+
+/* Style for the custom file upload button */
+.custom-file-upload {
+  background-color: #04AA6D; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 12px 24px; /* Add padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Align inline */
+  font-size: 16px; /* Set font size */
+  margin: 10px 0; /* Margin for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for custom file upload button */
+.custom-file-upload:hover {
+  background-color: #038d63; /* Darker green on hover */
+}
+
+/* Focus effect for accessibility */
+.custom-file-upload:focus {
+  outline: 3px solid #04AA6D; /* Green outline on focus */
+  outline-offset: 2px; /* Offset outline for better visibility */
+}
+
+
+ /* Style for all buttons */
+button,
+input[type="submit"] {
+  background-color: #04AA6D; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 12px 24px; /* Add padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  display: inline-block; /* Align buttons inline */
+  font-size: 16px; /* Set font size */
+  margin: 10px 0; /* Add margin for spacing */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #038d63; /* Darker green on hover */
+}
+
+/* Focus effect for accessibility */
+button:focus,
+input[type="submit"]:focus {
+  outline: 3px solid #04AA6D; /* Green outline on focus */
+  outline-offset: 2px; /* Offset outline for better visibility */
+}
+
+/* Style for disabled buttons */
+button:disabled,
+input[type="submit"]:disabled {
+  background-color: #c8c8c8; /* Gray background for disabled */
+  color: #7f7f7f; /* Gray text */
+  cursor: not-allowed; /* Show not-allowed cursor */
+  opacity: 0.6; /* Slightly transparent */
+}
+
