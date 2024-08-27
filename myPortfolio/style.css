@@ -308,4 +308,3 @@ input[type="submit"]:disabled {
   cursor: not-allowed; /* Show not-allowed cursor */
   opacity: 0.6; /* Slightly transparent */
 }
-
