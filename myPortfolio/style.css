@@ -1,310 +1,251 @@
+/* Fixed Navbar */
 #navbar {
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
- body {
-   margin: 15px;
-   background-color: #1b1b1b;
-   color: white;
-   font-family: Muli, sans-serif;
-   font-size: 16px;
- }
+/* Body Styling */
+body {
+  margin: 15px;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+}
 
- h1 {
-   font-family: "Space Mono", monospace;
-   font-size: 46px;
- }
+/* Headings */
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 46px;
+}
 
- .author_text {
-   font-family: "Space Mono", monospace;
-   font-size: 46px;
-   padding-left: 5%;
- }
+.author_text {
+  font-family: "Space Mono", monospace;
+  font-size: 46px;
+  padding-left: 5%;
+}
 
+/* Link Styles */
+a {
+  color: lightgreen;
+  text-decoration: none;
+}
 
- /* Unvisited link */
- a:link {
-   color: lightgreen;
-   text-decoration: none;
- }
+a:hover, a:active {
+  color: green;
+  text-decoration: underline;
+}
 
- a:visited {
-   color: green;
-   text-decoration: none;
- }
+a:visited {
+  color: green;
+}
 
- a:hover {
-   color: green;
-   text-decoration: underline;
- }
+/* Home Section */
+.home {
+  border: 1px solid black;
+  background-color: #050504;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
- a:active {
-   color: darkgreen;
-   text-decoration: underline;
- }
+.half {
+  flex-basis: 100%;
+}
 
- .home {
-   border: 1px solid black;
-   background-color: #050504;
-   overflow: auto;
-   display: flex;
-   flex-wrap: wrap;
- }
+@media screen and (min-width: 1200px) {
+  .half {
+    flex-basis: 50%;
+  }
+}
 
- .half {
-   flex-basis: 100%;
- }
+.author_picture {
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+}
 
- @media screen and (min-width: 1200px) {
-   .half {
-     flex-basis: 50%;
-   }
- }
+img {
+  display: block;
+  margin: auto;
+}
 
- .author_picture {
-   max-width: 400px;
-   height: auto;
-   padding: 10px;
- }
+/* Form Styles */
+.form {
+  background-color: #050504;
+  background-size: 100px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
 
- img {
-   display: block;
-   margin: auto;
- }
+#fullname,
+#phoneNumber,
+#fremail,
+#subject,
+#message {
+  width: 90%;
+  padding: 15px;
+  background: #f1f1f1;
+  border: none;
+  margin: 5px 0 22px 0;
+}
 
+#fullname:focus,
+#phoneNumber:focus,
+#fremail:focus,
+#subject:focus,
+#message:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
- .form {
-   background-color: #050504;
-   background-size: 100px;
-   border-radius: 25px;
-   padding: 10px;
-   margin: 10px;
- }
+/* Menu Container */
+.menu_container {
+  overflow: hidden;
+  background-color: #343434;
+  position: relative;
+}
 
- #fullname,
- #phoneNumber,
- #fremail,
- #subject,
- #message {
-   width: 90%;
- }
+.menu_container #myLinks {
+  display: none;
+}
 
- .menu_container {
-   overflow: hidden;
-   background-color: #343434;
-   position: relative;
- }
+.menu_container a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
 
- .menu_container #myLinks {
-   display: none;
- }
+.menu_container a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
- .menu_container a {
-   color: white;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 17px;
-   display: block;
- }
+.menu_container a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
- .menu_container a.icon {
-   background: black;
-   display: block;
-   position: absolute;
-   right: 0;
-   top: 0;
- }
+.active {
+  background-color: #212020;
+}
 
- .menu_container a:hover {
-   background-color: #ddd;
-   color: black;
- }
+/* Footer */
+footer {
+  text-align: center;
+  margin: 25px;
+}
 
- .active {
-   background-color: #212020;
- }
+/* Box Sizing */
+* {
+  box-sizing: border-box;
+}
 
- footer {
-   text-align: center;
-   margin: 25px;
- }
+/* Container */
+.container {
+  padding: 16px;
+  background-color: white;
+  color: black;
+}
 
- * {
-   box-sizing: border-box;
- }
+/* Button and Input Styles */
+button,
+input[type="submit"],
+.custom-file-upload {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
- /* Add padding to containers */
- .container {
-   padding: 16px;
-   background-color: white;
-   color: black;
- }
+button:hover,
+input[type="submit"]:hover,
+.custom-file-upload:hover {
+  background-color: #038d63;
+}
 
- /* Full-width input fields */
- input[type=text],
- input[type=email],
- input[type=password] {
-   width: 100%;
-   padding: 15px;
-   margin: 5px 0 22px 0;
-   display: inline-block;
-   border: none;
-   background: #f1f1f1;
- }
+button:focus,
+input[type="submit"]:focus,
+.custom-file-upload:focus {
+  outline: 3px solid #04AA6D;
+  outline-offset: 2px;
+}
 
- #message {
-   width: 90%;
-   padding: 15px;
- }
+button:disabled,
+input[type="submit"]:disabled {
+  background-color: #c8c8c8;
+  color: #7f7f7f;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
- input[type=text]:focus,
- input[type=email]:focus,
- input[type=password]:focus {
-   background-color: #ddd;
-   outline: none;
- }
+/* Hide default file input */
+input[type="file"] {
+  display: none;
+}
 
- #message:focus {
-   background-color: #ddd;
-   outline: none;
- }
-
- /* Overwrite default styles of hr */
- hr {
-   border: 1px solid #f1f1f1;
-   margin-bottom: 25px;
- }
-
- /* Set a style for the submit button */
- .btn {
-   background-color: #04AA6D;
-   color: white;
-   padding: 16px 20px;
-   margin: 8px 0;
-   border: none;
-   cursor: pointer;
-   width: 100%;
-   opacity: 0.9;
- }
-
- .btn:hover {
-   opacity: 1;
- }
-
- /* Add a blue text color to links */
- a {
-   color: dodgerblue;
- }
-
- /* Set a grey background color and center the text of the "sign in" section */
- .signin {
-   background-color: #f1f1f1;
-   text-align: center;
- }
-
- .imgcontainer {
-   text-align: center;
-   margin: 24px 0 12px 0;
-   width: 30%;
-   margin: auto;
- }
-
- img.avatar {
-   width: 50%;
-   border-radius: 50%;
- }
-
- .content {
-   text-align: center;
-   /* margin: auto; */
- }
-
- .error {
-   width: 92%;
-   margin: 0px auto;
-   padding: 10px;
-   border: 1px solid #a94442;
-   color: #a94442;
-   background: #f2dede;
-   border-radius: 5px;
-   text-align: center;
- }
-
- .success {
+/* Success and Error Messages */
+.success {
   color: #3c763d;
   background: #dff9d8;
   border: 1px solid #3c763d;
   margin-bottom: 20px;
- }
-
- /* Hide the default file input */
-input[type="file"] {
-  display: none; /* Hide default file input */
 }
 
-/* Style for the custom file upload button */
-.custom-file-upload {
-  background-color: #04AA6D; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  padding: 12px 24px; /* Add padding */
-  text-align: center; /* Center text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Align inline */
-  font-size: 16px; /* Set font size */
-  margin: 10px 0; /* Margin for spacing */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: center;
 }
 
-/* Hover effect for custom file upload button */
-.custom-file-upload:hover {
-  background-color: #038d63; /* Darker green on hover */
+/* Image Container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  width: 30%;
+  margin: auto;
 }
 
-/* Focus effect for accessibility */
-.custom-file-upload:focus {
-  outline: 3px solid #04AA6D; /* Green outline on focus */
-  outline-offset: 2px; /* Offset outline for better visibility */
+img.avatar {
+  width: 50%;
+  border-radius: 50%;
 }
 
-
- /* Style for all buttons */
-button,
-input[type="submit"] {
-  background-color: #04AA6D; /* Green background */
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  padding: 12px 24px; /* Add padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline from text */
-  display: inline-block; /* Align buttons inline */
-  font-size: 16px; /* Set font size */
-  margin: 10px 0; /* Add margin for spacing */
-  cursor: pointer; /* Show pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+/* Content Alignment */
+.content {
+  text-align: center;
 }
 
-/* Hover effect */
-button:hover,
-input[type="submit"]:hover {
-  background-color: #038d63; /* Darker green on hover */
+/* Sign-in Section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
-/* Focus effect for accessibility */
-button:focus,
-input[type="submit"]:focus {
-  outline: 3px solid #04AA6D; /* Green outline on focus */
-  outline-offset: 2px; /* Offset outline for better visibility */
-}
-
-/* Style for disabled buttons */
-button:disabled,
-input[type="submit"]:disabled {
-  background-color: #c8c8c8; /* Gray background for disabled */
-  color: #7f7f7f; /* Gray text */
-  cursor: not-allowed; /* Show not-allowed cursor */
-  opacity: 0.6; /* Slightly transparent */
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
