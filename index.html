@@ -21,12 +21,12 @@
 
     <nav class="menu_container">
         <a href="welcome-section" class="active"><i class="fa-solid fa-house"></i> Home</a>
-        <secion id="myLinks">
+        <section id="myLinks">
             <a href="#projects"><i class="fa-solid fa-address-card"></i> About</a>
             <a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
             <a href="myPortfolio/index.php"><i class="fa-solid fa-circle-user"></i> Login</a>
-        </secion>
+        </section>
         <!-- Add three bars icon  -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa-solid fa-bars"></i>
@@ -48,11 +48,11 @@
         <h1>About me</h1>
         <div class="project-tile" >
         <p> I&#39;m Lubnan Samae <br>
-        I&#39;m study Information Technology, Bachelor's degree at Fatoni University. I'm Interesting in
-        web
-        development. <br> <br>
-        My experience is C, HTML, CSS, JS language and basic cyber ane network security. <br> <br>
-        This is my first personal website by using HTML, CSS, and JS. <a></a></p>
+        I&#39;m study Information Technology, Bachelor's degree at Fatoni University. I'm Interested in web development. <br>
+        My experience includes C, HTML, CSS, JS, and basic cybersecurity and network security. <br>
+        This is my first personal website using HTML, CSS, and JS.</p>
+        <!-- Add an anchor element here -->
+        <a href="#portfolio">Check out my portfolio!</a>
         </div>
     </section>
     <hr>
@@ -60,7 +60,6 @@
     <section id="portfolio">
         <h1>Portfolio</h1>
         <img src="myPortfolio/img/p1.png" alt="portfolio_image" style="width: 70%;">
-
     </section>
     <hr>
     <section id="contact">
@@ -74,8 +73,7 @@
 
         <i class="fa-solid fa-book-atlas"></i> 
         <strong> Website </strong> <br>
-        <a id="profile-link" target="_blank">
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan" target="_blank">
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan" id="profile-link" target="_blank">
             Github.com/mylubnan</a> <br>
         &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan"
             target="_blank">
@@ -87,15 +85,14 @@
         &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/lubnan-samae-54b0681a9/"
             target="_blank">
             Linkedin.com/lubnan-samae-54b0681a9</a> 
-            </a>
             <br>
 
         <i class="fa-solid fa-comment"></i> <strong>Message Me</strong> <br>
         <form class="form" action="pathForTheActionScript" target="_blank" method="post">
             <fieldset>
                 <legend>User Information</legend>
-                <label for="fullname" title="Only character follow by name and surname">Full Name:</label> <br>
-                <input type="text" title="Only character follow by name and surname" name="fullname" id="fullname"
+                <label for="fullname" title="Only characters followed by name and surname">Full Name:</label> <br>
+                <input type="text" title="Only characters followed by name and surname" name="fullname" id="fullname"
                     placeholder="Full Name" required pattern="[A-Za-z]{1,}.[A-Za-z]{1,}">
                 <br>
                 <label for="phoneNumber" title="Only numeric except + at the front">Phone Number:</label> <br>
@@ -126,8 +123,6 @@
         </form>
     </section>
     <hr>
-
-    </section>
 
     <footer>
         Create By <a href="https://github.com/mylubnan" target="_blank">Lubnan Samae</a> | &#169; 2022 All
